@@ -1,6 +1,6 @@
 # advjalajsharma.in
 
-Website of Jalaj Sharma, Advocate (Delhi NCR). Plain static site, no build step. Hosted on Netlify, deployed automatically from the `main` branch. Domain: advjalajsharma.in (GoDaddy DNS → Netlify).
+Website of Jalaj Sharma, Advocate (Delhi NCR). Plain static site, no build step. Hosted on GitHub Pages from the `main` branch (root). Domain: advjalajsharma.in (GoDaddy DNS → GitHub Pages; `CNAME` file sets the custom domain). Previously hosted on Netlify; `netlify.toml` is unused on GitHub Pages.
 
 ## Files
 - `index.html` — home page. English by default; the English | हिंदी switch shows the whole page in one language at a time (`.e` / `.h` spans).
@@ -17,4 +17,4 @@ The form posts to the Apps Script web-app URL set in `data-endpoint` on `<form i
 No client names or case details, no testimonials, no success claims, no "best lawyer" wording, no "free consultation" or "24/7" (Bar Council of India Rule 36). Practice described as "litigation before the courts and tribunals of Delhi NCR". Only original text and the owner's own images. Font: Hind (Google Fonts, SIL Open Font License).
 
 ## Workflow
-Changes are prepared on a `preview-*` branch and shown as a preview first; they are merged to `main` (live) only after the owner approves.
+Changes are prepared on a `preview-*` branch and shown to the owner as a preview first; they are merged to `main` (live) only after the owner approves. The repository is public: never commit client names, documents or any private data.
