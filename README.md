@@ -7,7 +7,7 @@ Website of Jalaj Sharma, Advocate (Delhi NCR). Plain static site, no build step.
 - `cheque-bounce-what-to-do.html`, `cheque-bounce-kya-kare.html` — English and Hindi cheque bounce articles (linked as language alternates).
 - `assets/site.css`, `assets/site.js` — shared styles, language switch, disclaimer and consultation form.
 - `assets/jalaj-sharma.jpg` (owner's portrait), `assets/share.jpg` (link preview), `assets/favicon.svg`.
-- `backend/consultation-form.gs` — Google Apps Script that receives the consultation form: emails the details to advjalaj107@gmail.com and saves uploaded documents to a private Google Drive folder ("Website consultation requests"). Not served publicly (blocked in `netlify.toml`).
+- `backend/consultation-form.gs` — Google Apps Script that receives the consultation form: emails the details to advjalaj107@gmail.com and saves uploaded documents to a private Google Drive folder ("Website consultation requests"). Contains no secrets; on GitHub Pages it is publicly readable like the rest of the repository.
 - `sitemap.xml`, `robots.txt`.
 
 ## Consultation form
