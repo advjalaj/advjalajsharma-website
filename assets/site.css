@@ -160,6 +160,7 @@ html[data-lang="hi"] .guides li > a.e,html[data-lang="hi"] .guides li > span.e{d
 .contact .k{font-size:13.5px;font-weight:600;color:#AFC0EC;margin:0 0 6px}
 .contact p{margin:0;font-size:16.5px}
 .contact a{color:#fff;overflow-wrap:anywhere}
+.contact .addr p + p{margin-top:12px}
 footer{background:#121A3D;color:#B9C3DE;font-size:13.5px;line-height:1.7}
 footer .wrap{padding-block:28px}
 footer p{margin:0;max-width:900px}
