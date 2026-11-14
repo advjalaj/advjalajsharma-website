@@ -1,7 +1,8 @@
 /* advjalajsharma.in — language switch, disclaimer and consultation form */
 (function(){
   var root = document.documentElement;
-  var isHome = document.body.getAttribute('data-page') === 'home';
+  var page = document.body.getAttribute('data-page');
+  var isHome = page === 'home' || page === 'tool'; /* pages with an in-place English/Hindi switch */
   var lang = root.getAttribute('data-lang') || 'en';
 
   function store(k, v){ try{ localStorage.setItem(k, v); }catch(e){} }
