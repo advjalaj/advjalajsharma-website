@@ -33,6 +33,15 @@
     a.addEventListener('click', function(){ store('site-lang', a.dataset.set); });
   });
 
+  /* ---------- About opens only on request ---------- */
+  var aboutD = document.getElementById('about-d');
+  if (aboutD){
+    document.querySelectorAll('a[href="#about"]').forEach(function(a){
+      a.addEventListener('click', function(){ aboutD.open = true; });
+    });
+    if (location.hash === '#about') aboutD.open = true;
+  }
+
   /* ---------- disclaimer ---------- */
   var gate = document.getElementById('gate');
   var seen = false;
@@ -65,6 +74,7 @@
 
     function fmt(b){ return b < 1024*1024 ? Math.round(b/1024) + ' KB' : (b/1024/1024).toFixed(1) + ' MB'; }
     renderFiles = function(){
+      if (!list) return;
       list.innerHTML = '';
       files.forEach(function(f, i){
         var li = document.createElement('li'), s = document.createElement('span'), b = document.createElement('button');
@@ -84,12 +94,14 @@
       });
       renderFiles();
     }
+    if (drop && input){ /* document upload is optional markup; the form works without it */
     drop.addEventListener('click', function(){ input.click(); });
     drop.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); input.click(); } });
     input.addEventListener('change', function(){ addFiles(input.files); input.value = ''; });
     ['dragenter','dragover'].forEach(function(t){ drop.addEventListener(t, function(e){ e.preventDefault(); drop.classList.add('over'); }); });
     ['dragleave','drop'].forEach(function(t){ drop.addEventListener(t, function(e){ e.preventDefault(); drop.classList.remove('over'); }); });
     drop.addEventListener('drop', function(e){ if (e.dataTransfer) addFiles(e.dataTransfer.files); });
+    }
 
     function mimeOf(f){
       if (f.type) return f.type;

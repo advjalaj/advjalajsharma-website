@@ -22,7 +22,7 @@ UI = {
         "short": "In short",
         "faq": "Common questions",
         "note": "This guide is general information on the law as it stands in {month}. It is not legal advice; time limits and outcomes depend on the facts of each case.",
-        "nav": [("index.html#practice", "Practice"), ("index.html#guidance", "Legal guides"), ("index.html#faq", "FAQ"), ("index.html#consult", "Contact")],
+        "nav": [("index.html#about", "About"), ("index.html#practice", "Practice"), ("index.html#guidance", "Legal guides"), ("index.html#faq", "FAQ"), ("index.html#consult", "Contact")],
         "brand": "Jalaj Sharma",
         "read": "min read",
         "by": "Jalaj Sharma, Advocate",
@@ -34,7 +34,7 @@ UI = {
         "short": "संक्षेप में",
         "faq": "आम सवाल",
         "note": "यह गाइड {month} तक के कानून पर सामान्य जानकारी है, कानूनी सलाह नहीं। समय-सीमा और परिणाम हर मामले के तथ्यों पर निर्भर करते हैं।",
-        "nav": [("index.html#practice", "प्रैक्टिस"), ("index.html#guidance", "कानूनी जानकारी"), ("index.html#faq", "सवाल-जवाब"), ("index.html#consult", "संपर्क")],
+        "nav": [("index.html#about", "परिचय"), ("index.html#practice", "प्रैक्टिस"), ("index.html#guidance", "कानूनी जानकारी"), ("index.html#faq", "सवाल-जवाब"), ("index.html#consult", "संपर्क")],
         "brand": "जलज शर्मा",
         "read": "मिनट",
         "by": "जलज शर्मा, अधिवक्ता",
@@ -188,8 +188,6 @@ def build(a, gate, contact, footer):
   </div>
 </article>
 </main>
-
-{contact}
 
 {footer}
 
