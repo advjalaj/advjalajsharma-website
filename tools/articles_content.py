@@ -386,9 +386,9 @@ ARTICLES = [
         "modified": "2026-11-14",
         "summary": [
             "Note the date you received it and keep the envelope.",
-            "Do not ignore it, and do not reply in anger.",
+            "Do not disregard it; refrain from responding in haste or in anger.",
             "Check whether a law attaches a deadline to it, such as 15 days in a cheque bounce.",
-            "Reply in writing within the time given and keep proof of sending.",
+            "Decide whether a reply is called for, and consult an advocate of your choice.",
         ],
         "sections": [
             (EN_Q[0], """
@@ -406,9 +406,9 @@ ARTICLES = [
     <ul>
       <li>Write down the <strong>date you received it</strong> and keep the envelope and tracking details.</li>
       <li>Read the <strong>deadline</strong> it gives.</li>
-      <li>Do not admit anything, threaten or reply in anger, by message or by phone.</li>
+      <li>Refrain from responding in haste or in anger, whether by message, email or phone.</li>
       <li>Gather the documents relating to the dispute.</li>
-      <li>Send a <strong>written reply</strong> within the time given, preferably through an advocate, by Speed Post or registered post.</li>
+      <li>Consider whether a reply is called for in the circumstances, and consult an advocate of your choice before deciding.</li>
     </ul>
 """),
             (EN_Q[3], """
@@ -419,7 +419,7 @@ ARTICLES = [
       <li>The notice, the envelope and the tracking record</li>
       <li>Any agreement, invoice, receipt or payment record related to the dispute</li>
       <li>Messages and emails with the other side</li>
-      <li>A copy of your reply and proof of posting</li>
+      <li>A copy of any reply sent, with proof of dispatch</li>
     </ul>
 """),
             (EN_Q[5], """
