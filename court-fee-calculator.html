@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Court Fee Calculator: Haryana and Uttar Pradesh | Jalaj Sharma, Advocate</title>
+<meta name="description" content="Indicative ad valorem court fee on a plaint in a suit for recovery of money in Haryana and Uttar Pradesh, with the slab used and the calculation shown.">
+<link rel="canonical" href="https://advjalajsharma.in/court-fee-calculator">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Court fee calculator: Haryana and Uttar Pradesh">
+<meta property="og:description" content="Indicative ad valorem court fee on a money suit, with the calculation shown.">
+<meta property="og:url" content="https://advjalajsharma.in/court-fee-calculator">
+<meta property="og:image" content="https://advjalajsharma.in/assets/share.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:32px;margin-top:32px;align-items:start}
+.calc-form{border:1px solid var(--rule);border-radius:4px;padding:26px;display:flex;flex-direction:column;gap:18px}
+.calc-form label,.calc-form .legend{font-size:14.5px;font-weight:600}
+.calc-form select,.calc-form input{font:inherit;font-size:17px;padding:11px 12px;border:1px solid #C5CCDB;border-radius:3px;background:#fff;color:var(--text);width:100%;min-height:48px}
+.calc-form select:focus,.calc-form input:focus{outline:2px solid var(--ink-2);outline-offset:0;border-color:var(--ink-2)}
+.amt{position:relative}.amt span{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:17px}
+.amt input{padding-left:30px;font-variant-numeric:tabular-nums}
+.words{font-size:14px;color:var(--muted);margin:2px 0 0;min-height:1.4em}
+.result{background:var(--wash);border-radius:4px;padding:26px;min-height:200px}
+.result .k{margin:0;font-size:14px;font-weight:600;color:var(--ink)}
+.result .fee{margin:6px 0 12px;font-size:clamp(34px,5vw,46px);font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.1}
+.result .how{margin:0 0 6px;font-size:15.5px;color:var(--text);font-variant-numeric:tabular-nums}
+.result .src{margin:12px 0 0;font-size:13.5px;color:var(--muted)}
+.result .warn{margin:0;font-size:15.5px;color:var(--flag-text);background:var(--flag-bg);padding:12px 14px;border-radius:3px}
+.slabs{margin-top:48px}
+.slabs h2{font-size:24px;margin-bottom:6px}
+.slab-wrap{overflow-x:auto;margin-top:14px}
+.slab-wrap table{border-collapse:collapse;width:100%;font-size:15px;font-variant-numeric:tabular-nums}
+.slab-wrap th,.slab-wrap td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+.slab-wrap th{background:var(--wash);color:var(--ink);font-weight:600;font-size:14px}
+.slab-wrap tr.on td{background:#E7ECF8;font-weight:600}
+.tool-note{max-width:820px;font-size:14.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:18px;margin-top:40px}
+.tool-note p{margin:0 0 8px}
+@media (max-width:860px){.calc{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-page="tool">
+
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
+  <div class="gate-box">
+    <div class="gate-top">
+      <h2 id="gate-title"><span class="e">Disclaimer</span><span class="h">अस्वीकरण</span></h2>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set="en" aria-pressed="true">English</button>
+        <button type="button" data-set="hi" aria-pressed="false">हिंदी</button>
+      </div>
+    </div>
+    <p class="e">The Bar Council of India does not permit advocates to solicit work or advertise. By clicking “I agree”, you acknowledge that:</p>
+    <p class="h">बार काउंसिल ऑफ़ इंडिया के नियमों के अनुसार अधिवक्ता काम माँगने या विज्ञापन करने के लिए अधिकृत नहीं हैं। “मैं सहमत हूँ” पर क्लिक करके आप स्वीकार करते हैं कि:</p>
+    <ul>
+      <li><span class="e">you are seeking information about Jalaj Sharma, Advocate, of your own accord;</span><span class="h">आप अपनी इच्छा से जलज शर्मा, अधिवक्ता, के बारे में जानकारी ले रहे हैं;</span></li>
+      <li><span class="e">there has been no advertisement, solicitation, invitation or inducement of any kind;</span><span class="h">किसी प्रकार का विज्ञापन, आग्रह, निमंत्रण या प्रलोभन नहीं दिया गया है;</span></li>
+      <li><span class="e">the information on this website is general information, not legal advice;</span><span class="h">इस वेबसाइट की जानकारी केवल सामान्य जानकारी है, कानूनी सलाह नहीं;</span></li>
+      <li><span class="e">use of this website does not create an advocate–client relationship.</span><span class="h">इस वेबसाइट के उपयोग से अधिवक्ता–मुवक्किल संबंध नहीं बनता।</span></li>
+    </ul>
+    <button type="button" class="btn btn-p" id="agree"><span class="e">I agree</span><span class="h">मैं सहमत हूँ</span></button>
+  </div>
+</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="index.html"><span class="e">Jalaj Sharma</span><span class="h">जलज शर्मा</span></a>
+    <nav aria-label="Main">
+      <a href="index.html#practice"><span class="e">Practice</span><span class="h">प्रैक्टिस</span></a>
+      <a href="index.html#guidance"><span class="e">Legal guides</span><span class="h">कानूनी जानकारी</span></a>
+      <a href="index.html#faq"><span class="e">FAQ</span><span class="h">सवाल-जवाब</span></a>
+      <a href="index.html#consult"><span class="e">Contact</span><span class="h">संपर्क</span></a>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set="en" aria-pressed="true">English</button>
+        <button type="button" data-set="hi" aria-pressed="false">हिंदी</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap section" style="padding-top:48px">
+  <p class="crumb"><a href="index.html#guidance"><span class="e">← Legal guides</span><span class="h">← कानूनी जानकारी</span></a></p>
+  <h1 style="margin:0;font-size:clamp(30px,4vw,42px);line-height:1.2"><span class="e">Court fee calculator</span><span class="h">कोर्ट फ़ीस कैलकुलेटर</span></h1>
+  <p class="lead" style="margin-top:12px;max-width:680px"><span class="e">Indicative ad valorem court fee payable on the plaint in a suit for recovery of money.</span><span class="h">पैसे की वसूली के वाद में वादपत्र (plaint) पर देय मूल्यानुसार (ad valorem) कोर्ट फ़ीस का अनुमान।</span></p>
+
+  <div class="calc">
+    <form class="calc-form" id="calc" novalidate>
+      <div>
+        <label for="c-state"><span class="e">State</span><span class="h">राज्य</span></label>
+        <select id="c-state">
+          <option value="haryana" data-hi="हरियाणा">Haryana</option>
+          <option value="up" data-hi="उत्तर प्रदेश">Uttar Pradesh</option>
+          <option value="delhi" data-hi="दिल्ली">Delhi</option>
+        </select>
+      </div>
+      <div>
+        <label for="c-amt"><span class="e">Amount claimed (value of the suit)</span><span class="h">दावा राशि (वाद का मूल्य)</span></label>
+        <div class="amt"><span aria-hidden="true">₹</span><input id="c-amt" type="text" inputmode="numeric" autocomplete="off" value="5,00,000" aria-describedby="c-words"></div>
+        <p class="words" id="c-words"></p>
+      </div>
+    </form>
+
+    <div class="result" id="result" aria-live="polite"></div>
+  </div>
+
+  <section class="slabs" aria-labelledby="slab-h">
+    <h2 id="slab-h"><span class="e">Slabs used</span><span class="h">लागू स्लैब</span></h2>
+    <p class="hint"><span class="e">The row that applies to your amount is highlighted.</span><span class="h">आपकी राशि पर लागू पंक्ति हाइलाइट की गई है।</span></p>
+    <div class="slab-wrap" id="slabs"></div>
+  </section>
+
+  <div class="tool-note">
+    <p><span class="e"><strong>Indicative only.</strong> This calculates the ad valorem fee on a plaint in a money suit. Other kinds of suits (declaration, injunction, possession, partition), appeals and applications are valued and charged differently. Always confirm the fee against the court’s current schedule before filing.</span><span class="h"><strong>केवल अनुमान।</strong> यह पैसे की वसूली के वाद में वादपत्र पर मूल्यानुसार फ़ीस की गणना करता है। अन्य प्रकार के वाद (घोषणा, निषेधाज्ञा, कब्ज़ा, बँटवारा), अपील और आवेदनों की फ़ीस अलग तरीके से तय होती है। दायर करने से पहले अदालत की वर्तमान अनुसूची से फ़ीस की पुष्टि अवश्य करें।</span></p>
+    <p><span class="e">Sources: Haryana — Court-fees Act, 1870, Schedule I as amended by the Court Fees (Haryana Amendment) Act, 2009, as published by the district courts of Haryana. Uttar Pradesh — Court-fees Act, 1870, Schedule I, Article 1, as applicable in Uttar Pradesh.</span><span class="h">स्रोत: हरियाणा — कोर्ट-फ़ीस अधिनियम, 1870, अनुसूची I, कोर्ट फ़ीस (हरियाणा संशोधन) अधिनियम, 2009 के अनुसार, जैसा हरियाणा की ज़िला अदालतों ने प्रकाशित किया है। उत्तर प्रदेश — कोर्ट-फ़ीस अधिनियम, 1870, अनुसूची I, अनुच्छेद 1, जैसा उत्तर प्रदेश में लागू है।</span></p>
+  </div>
+</main>
+
+<section class="contact" aria-label="Office details">
+  <div class="wrap">
+    <div><p class="k"><span class="e">Delhi office</span><span class="h">दिल्ली कार्यालय</span></p><p><span class="e">207, Nilgiri Apartment,<br>Barakhamba Road, New Delhi</span><span class="h">207, नीलगिरि अपार्टमेंट,<br>बाराखंभा रोड, नई दिल्ली</span></p></div>
+    <div><p class="k"><span class="e">Noida office</span><span class="h">नोएडा कार्यालय</span></p><p><span class="e">A-427, Sector 47,<br>Noida, Uttar Pradesh</span><span class="h">ए-427, सेक्टर 47,<br>नोएडा, उत्तर प्रदेश</span></p></div>
+    <div><p class="k"><span class="e">Phone &amp; WhatsApp</span><span class="h">फ़ोन और व्हाट्सऐप</span></p><p><a href="tel:+919910726868">+91 99107 26868</a></p></div>
+    <div><p class="k"><span class="e">Email</span><span class="h">ईमेल</span></p><p><a href="mailto:advjalaj107@gmail.com">advjalaj107@gmail.com</a></p></div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <p class="e">As per the rules of the Bar Council of India, advocates are not permitted to solicit work or advertise. This website provides information only and is not legal advice. Use of this website does not create an advocate–client relationship.</p>
+  <p class="h">बार काउंसिल ऑफ़ इंडिया के नियमों के अनुसार अधिवक्ता काम माँगने या विज्ञापन करने के लिए अधिकृत नहीं हैं। यह वेबसाइट केवल जानकारी देती है और कानूनी सलाह नहीं है। इस वेबसाइट के उपयोग से अधिवक्ता–मुवक्किल संबंध नहीं बनता।</p>
+  <p class="copy">© 2026 Jalaj Sharma</p>
+</div></footer>
+
+<script src="assets/site.js"></script>
+<script src="assets/court-fee.js"></script>
+</body>
+</html>
