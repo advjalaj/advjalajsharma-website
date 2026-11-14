@@ -189,8 +189,6 @@ def build(a, gate, contact, footer):
 </article>
 </main>
 
-{contact}
-
 {footer}
 
 <script src="assets/site.js"></script>
