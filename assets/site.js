@@ -33,6 +33,15 @@
     a.addEventListener('click', function(){ store('site-lang', a.dataset.set); });
   });
 
+  /* ---------- About opens only on request ---------- */
+  var aboutD = document.getElementById('about-d');
+  if (aboutD){
+    document.querySelectorAll('a[href="#about"]').forEach(function(a){
+      a.addEventListener('click', function(){ aboutD.open = true; });
+    });
+    if (location.hash === '#about') aboutD.open = true;
+  }
+
   /* ---------- disclaimer ---------- */
   var gate = document.getElementById('gate');
   var seen = false;
